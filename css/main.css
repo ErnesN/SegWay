@@ -51,6 +51,11 @@ body {
     width: 375px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
 
 .menu-button {
   position: fixed;
@@ -149,4 +154,30 @@ body {
 
 .mobile__item:not(:last-child) {
   margin-right: 9px;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  -webkit-transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-mobile.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  padding: 48px 40px;
 }/*# sourceMappingURL=main.css.map */
