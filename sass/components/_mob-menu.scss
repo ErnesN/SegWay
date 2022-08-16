@@ -46,14 +46,27 @@
 }
 .mobile__logo {
     fill: $icon-color;
+    
 }
 .mobile__icon {
     fill: white;
     stroke: $icon-color;
+    transition: stroke $transition-duration;
+    
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
 }
 .mobile__icon--fill {
     fill: $icon-color;
     stroke: white;
+    transition: fill $transition-duration;
+    
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
 }
 .mobile__link--margin {
     margin-right: 50px;

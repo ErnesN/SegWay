@@ -112,11 +112,21 @@ body {
 .mobile__icon {
   fill: white;
   stroke: #32393F;
+  -webkit-transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__icon:hover, .mobile__icon:focus {
+  fill: #009EFF;
 }
 
 .mobile__icon--fill {
   fill: #32393F;
   stroke: white;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__icon--fill:hover, .mobile__icon--fill:focus {
+  fill: #009EFF;
 }
 
 .mobile__link--margin {
